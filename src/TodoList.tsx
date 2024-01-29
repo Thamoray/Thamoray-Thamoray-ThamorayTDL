@@ -24,6 +24,7 @@ export const TodoList: React.FC = () => {
         })
         );
     }
+
     const handleClick = () => {
         const newTodo: item = { id: Date.now(), text: input, completed: false };
         setTods([...todos, newTodo]);
@@ -32,7 +33,6 @@ export const TodoList: React.FC = () => {
         setTods([]);
     }
     return <div className='main-container'>
-
         <h1>To Do List</h1>
         <ul>
             {
